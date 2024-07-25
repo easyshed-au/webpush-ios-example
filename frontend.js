@@ -38,7 +38,7 @@ function isPushManagerActive(pushManager) {
 async function subscribeToPush() {
     // Public part of VAPID key, generation of that covered in README
     // All subscription tokens associated with that key, so if you change it - you may lose old subscribers
-    const VAPID_PUBLIC_KEY = 'BAwUJxIa7mJZMqu78Tfy2Sb1BWnYiAatFCe1cxpnM-hxNtXjAwaNKz1QKLU8IYYhjUASOFzSvSnMgC00vfsU0IM';
+    const VAPID_PUBLIC_KEY = 'BE0sELQbqjWcel2U--fpVly93kXEjx7Urr11WY6VwNui7vCsUIYcOISbJaI4Kb7kAhd7H75L2NsVRYf4BvVs3rc';
 
     let swRegistration = await navigator.serviceWorker.getRegistration();
     let pushManager = swRegistration.pushManager;
@@ -71,10 +71,10 @@ function testSend() {
     const title = "Push title";
     const options = {
         body: "Additional text with some description",
-        icon: "https://andreinwald.github.io/webpush-ios-example/images/push_icon.jpg",
+        icon: "https://easyshed-au.github.io/webpush-ios-example/images/push_icon.jpg",
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Orange_tabby_cat_sitting_on_fallen_leaves-Hisashi-01A.jpg/1920px-Orange_tabby_cat_sitting_on_fallen_leaves-Hisashi-01A.jpg",
         data: {
-            "url": "https://andreinwald.github.io/webpush-ios-example/?page=success",
+            "url": "https://easyshed-au.github.io/webpush-ios-example/?page=success",
             "message_id": "your_internal_unique_message_id_for_tracking"
         },
     };
